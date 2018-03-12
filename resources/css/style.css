@@ -1,0 +1,87 @@
+body {
+  background-color: #fbf9f9;
+  color: #3f4156;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Cardo', serif;
+}
+
+.container {
+  text-align: center;
+  height: 280px;
+  width: auto;
+}
+
+
+a {
+  color: inherit;
+}
+
+/*
+Color palette coming from dribbble.com, https://dribbble.com/shots/4334912-Cure-Mobile-App#
+See images/palette.png for reference
+*/
+
+/* Background colors */
+.background-red {
+    background: #f36465;
+}
+.background-white {
+    background: #fbf9f9;
+}
+.background-peach {
+    background: #fe9f95;
+}
+.background-skin {
+    background: #eccfd0;
+}
+.background-black {
+    background: #3f4156;
+}
+.background-rosySkin {
+    background: #ffc2b4;
+}
+
+/* Text colors */
+.red {
+    color: #f36465;
+}
+.white {
+    color: #fbf9f9;
+}
+.peach {
+    color: #fe9f95;
+}
+.skin {
+    color: #eccfd0;
+}
+.black {
+    color: #3f4156;
+}
+.rosySkin {
+    color: #ffc2b4;
+}
+
+
+
+/* SASS */
+/*
+$swatch_1: #f36465;
+$swatch_2: #fbf9f9;
+$swatch_3: #fe9f95;
+$swatch_4: #eccfd0;
+$swatch_5: #3f4156;
+$swatch_6: #ffc2b4;
+*/
+
+/* LESS */
+/*
+@swatch_1: #f36465;
+@swatch_2: #fbf9f9;
+@swatch_3: #fe9f95;
+@swatch_4: #eccfd0;
+@swatch_5: #3f4156;
+@swatch_6: #ffc2b4;
+*/
