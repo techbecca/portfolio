@@ -14,7 +14,6 @@ h1 {
   width: auto;
 }
 
-
 a {
   color: inherit;
 }
@@ -25,48 +24,59 @@ See images/palette.png for reference
 */
 
 /* Background colors */
+
 .background-red {
-    background: #f36465;
+  background: #f36465;
 }
+
 .background-white {
-    background: #fbf9f9;
+  background: #fbf9f9;
 }
+
 .background-peach {
-    background: #fe9f95;
+  background: #fe9f95;
 }
+
 .background-skin {
-    background: #eccfd0;
+  background: #eccfd0;
 }
+
 .background-black {
-    background: #3f4156;
+  background: #3f4156;
 }
+
 .background-rosySkin {
-    background: #ffc2b4;
+  background: #ffc2b4;
 }
 
 /* Text colors */
+
 .red {
-    color: #f36465;
+  color: #f36465;
 }
+
 .white {
-    color: #fbf9f9;
+  color: #fbf9f9;
 }
+
 .peach {
-    color: #fe9f95;
+  color: #fe9f95;
 }
+
 .skin {
-    color: #eccfd0;
+  color: #eccfd0;
 }
+
 .black {
-    color: #3f4156;
+  color: #3f4156;
 }
+
 .rosySkin {
-    color: #ffc2b4;
+  color: #ffc2b4;
 }
-
-
 
 /* SASS */
+
 /*
 $swatch_1: #f36465;
 $swatch_2: #fbf9f9;
@@ -77,6 +87,7 @@ $swatch_6: #ffc2b4;
 */
 
 /* LESS */
+
 /*
 @swatch_1: #f36465;
 @swatch_2: #fbf9f9;
