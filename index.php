@@ -27,7 +27,7 @@
       $path = "/resources/img/albums"
       $albums = glob($path . '/*' , GLOB_ONLYDIR);
       foreach ($albums as $album) {
-        <p>{$albums}: {$album} <p>
+        <p>Hey<p>
         <br/>
       }
       <p>"The end"</p>
