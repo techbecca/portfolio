@@ -25,10 +25,10 @@
     <h2>Render Albums Here</h2>
     <?php
       $path = "/resources/img/albums"
-      $albums = glob($path . '/*' , GLOB_ONLYDIR);
-      foreach ($albums as $album) {
-        <p>Hey<p>
-        <br/>
+      $it = new FilesystemIterator(dirname($path));
+      foreach ($it as $fileinfo) {
+          echo $fileinfo->getFilename() . "\n";
+      }
       }
       <p>"The end"</p>
 
