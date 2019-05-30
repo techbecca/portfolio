@@ -21,10 +21,16 @@
     <br/>
   </div>
 
-  <div>
+  <div class="albums">
     <h2>Render Albums Here</h2>
     <?php
-      echo "new Album Here"
+      $path = "/resources/img/albums"
+      $albums = glob($path . '/*' , GLOB_ONLYDIR);
+      foreach ($albums as $album) {
+        <p>{$albums}: {$album} <p>
+        <br/>
+      }
+      <p>"The end"</p>
 
      ?>
    </div>
