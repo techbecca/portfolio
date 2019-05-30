@@ -21,6 +21,13 @@
     <br/>
   </div>
 
+  <div>
+    <h2>Render Albums Here</h2>
+    <?php
+      echo "new Album Here"
+
+     ?>
+   </div>
   <div class="projects">
     <ul>
       <li> <a href="#">link 1</a> </li>
