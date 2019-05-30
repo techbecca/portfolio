@@ -1,7 +1,8 @@
 # TODO
 
-- [] flytta index.html innehåll till index.php
+- [x] flytta index.html innehåll till index.php
 - [x] fyll img mapp med album-struktur
+- [x] fyll album med bilder
 - [] visa bilderna på index.php: traverse album directory and build static html
 - [] pop-up med större bild när man klickar på bilderna
 - [x] be jesper om design-spec
