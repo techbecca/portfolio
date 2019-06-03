@@ -4,6 +4,11 @@
 - [x] fyll img mapp med album-struktur
 - [x] fyll album med bilder
 - [] visa bilderna på index.php: traverse album directory and build static html
+  - [x] generera albumnamn
+  - [x] traversera filnamnen
+  - [] sätt upp bilderna
+  - [] gör bilderna lagom stora och inline-block
+  - [] gör funktioner för php filen
 - [] pop-up med större bild när man klickar på bilderna
 - [x] be jesper om design-spec
 

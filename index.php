@@ -21,6 +21,7 @@
     <br/>
   </div>
   <div class="albums">
+    <h1> Gallery </h1>
     <?php
       $path = "./resources/img/albums";
       $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
