@@ -23,7 +23,7 @@
   <div class="albums">
     <?php
       $path = "./resources/img/albums";
-      $iterator = new FilesystemIterator(dirname($path));
+      $iterator = new FilesystemIterator($path);
       $entries = array();
     ?>
     <h2>Render <?= $path;?> Here</h2>
