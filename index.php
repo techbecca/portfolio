@@ -31,7 +31,7 @@
           $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_PATHNAME);
           foreach ($imgIt as $imgFileinfo) {
 //            echo $imgIt->key() . "</br>";
-            echo "<img src=\"".$imgIt->key()."\">";
+            echo "<img src=\"".$imgIt->key()."\" width=\"500\">";
           }
         }
       }
