@@ -28,6 +28,11 @@ p {
   margin: 0 0 23px 0;
 }
 
+img {
+  max-width: 500px;
+  height: auto;
+}
+
 /* Old fonts
 
 h1 {
