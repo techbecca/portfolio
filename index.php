@@ -36,6 +36,7 @@
       }
     ?>
   </div>
+  <!--
   <div class="projects">
     <ul>
       <li> <a href="#">link 1</a> </li>
@@ -44,6 +45,7 @@
       <li> <a href="#">link 4</a> </li>
     </ul>
   </div>
+  -->
 </body>
 
 </html>
