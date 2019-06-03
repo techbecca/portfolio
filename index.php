@@ -24,19 +24,13 @@
     <?php
       $path = "./resources/img/albums";
       $iterator = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
-      $entries = array();
-    ?>
-    <h2>Render <?= $path;?> Here</h2>
-    <?php foreach ($iterator as $fileinfo) : ?>
-      <?php if ($fileinfo->isDir()) {
-        echo "<h3>".strtoupper($fileinfo->getFilename())."</h3>";
-      } ?>
+      foreach ($iterator as $fileinfo) :
+          if ($fileinfo->isDir()) {
+            echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
+          }
 
-    <?php endforeach ?>
-    <?php
-      var_dump($entries);
-      echo "The end";
-     ?>
+      echo "\n"."The end"."\n";
+   ?>
    </div>
   <div class="projects">
     <ul>
