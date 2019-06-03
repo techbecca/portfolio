@@ -24,10 +24,11 @@
   <div class="albums">
     <h2>Render Albums Here</h2>
     <?php
-      $path = "/resources/img/albums";
-      $it = new FilesystemIterator(dirname($path));
+      $path = "./resources/img/albums";
+      $it = new FilesystemIterator($path);
       foreach ($it as $fileinfo) {
-          echo $fileinfo->getFilename() . "\n";
+        echo "hey ";
+          //echo $fileinfo->getFilename() . "\n";
       }
       echo "The end";
 
