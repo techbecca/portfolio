@@ -29,7 +29,7 @@
           echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
           $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_FILENAME);
           foreach ($imgIt as $imgFileinfo) {
-            echo $imgIt->key() . "\n";
+            echo $imgIt->key() . "</br>";
           }
         }
       }
