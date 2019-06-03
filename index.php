@@ -23,10 +23,18 @@
   <div class="albums">
     <?php
       $path = "./resources/img/albums";
-      $iterator = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
-      foreach ($iterator as $fileinfo) {
+      $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
+      foreach ($it as $dirPath => $fileinfo) {
         if ($fileinfo->isDir()) {
-          echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
+          $dir = $fileinfo->getFilename();
+          echo "<h2>".strtoupper($dir)."</h2>";
+          echo "Path: ".$dirPath;
+          /*
+          $imgIt = new FilesystemIterator($path."/".$dir);
+          foreach ($variable as $key => $value) {
+            // code...
+          }
+          */
         }
       }
       echo "The end";
