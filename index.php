@@ -27,7 +27,7 @@
       $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
       foreach ($it as $filepath => $fileinfo) {
         if ($fileinfo->isDir()) {
-          echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
+          echo "<h2>".$fileinfo->getFilename()."</h2>";
           $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_FILENAME);
           foreach ($imgIt as $imgFileinfo) {
             echo $imgIt->key() . "</br>";
