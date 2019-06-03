@@ -28,7 +28,7 @@
       $it = new FilesystemIterator($path);
       foreach ($it as $fileinfo) {
         echo "hey ";
-          //echo $fileinfo->getFilename() . "\n";
+        echo $fileinfo->getFilename() . "\n";
       }
       echo "The end";
 
