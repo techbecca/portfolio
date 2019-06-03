@@ -9,6 +9,7 @@
   - [] sätt upp bilderna
   - [] gör bilderna lagom stora och inline-block
   - [] gör funktioner för php filen
+  - [] gör att man går in och ut ur php-kontext istället för echo
 - [] pop-up med större bild när man klickar på bilderna
 - [x] be jesper om design-spec
 
