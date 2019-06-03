@@ -30,7 +30,7 @@
     <?php
       foreach ($iterator as $fileinfo) : ?>
         <h3><?= $fileinfo->getFilename() ?></h3>
-        $entries[] =  $fileinfo->getFilename();
+        <?php $entries[] =  $fileinfo->getFilename(); ?>
     <?php endforeach ?>
     <?php
       var_dump($entries);
