@@ -6,8 +6,8 @@
 - [] visa bilderna på index.php: traverse album directory and build static html
   - [x] generera albumnamn
   - [x] traversera filnamnen
-  - [] sätt upp bilderna
-  - [] gör bilderna lagom stora och inline-block
+  - [x] sätt upp bilderna
+  - [/] gör bilderna lagom stora och inline-block
   - [] gör funktioner för php filen
   - [] gör att man går in och ut ur php-kontext istället för echo
 - [] pop-up med större bild när man klickar på bilderna
