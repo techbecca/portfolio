@@ -24,14 +24,14 @@
     <?php
       $path = "./resources/img/albums";
       $iterator = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
-      foreach ($iterator as $fileinfo) :
-          if ($fileinfo->isDir()) {
-            echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
-          }
-
-      echo "\n"."The end"."\n";
-   ?>
-   </div>
+      foreach ($iterator as $fileinfo) {
+        if ($fileinfo->isDir()) {
+          echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
+        }
+      }
+      echo "The end";
+    ?>
+  </div>
   <div class="projects">
     <ul>
       <li> <a href="#">link 1</a> </li>
