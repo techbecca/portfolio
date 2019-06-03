@@ -24,20 +24,15 @@
     <?php
       $path = "./resources/img/albums";
       $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
-      foreach ($it as $dirPath => $fileinfo) {
+      foreach ($it as $filepath => $fileinfo) {
         if ($fileinfo->isDir()) {
-          $dir = $fileinfo->getFilename();
-          echo "<h2>".strtoupper($dir)."</h2>";
-          echo "Path: ".$dirPath;
-          /*
-          $imgIt = new FilesystemIterator($path."/".$dir);
-          foreach ($variable as $key => $value) {
-            // code...
+          echo "<h2>".strtoupper($fileinfo->getFilename())."</h2>";
+          $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_FILENAME);
+          foreach ($imgIt as $imgFileinfo) {
+            echo $imgIt->key() . "\n";
           }
-          */
         }
       }
-      echo "The end";
     ?>
   </div>
   <div class="projects">
