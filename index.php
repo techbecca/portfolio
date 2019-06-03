@@ -1,4 +1,8 @@
-
+ <?php
+ function createAlbumElement($name) {
+   echo "<h3>".
+ }
+  ?>
 <html>
 
 <head>
@@ -20,13 +24,14 @@
     <h3>View my shit. Hopefully it's awesome.</h3>
     <br/>
   </div>
-
   <div class="albums">
-    <h2>Render Albums Here</h2>
     <?php
       $path = "./resources/img/albums";
       $it = new FilesystemIterator(dirname($path));
       $entries = array();
+    ?>
+    <h2>Render <?= $path;?> Here</h2>
+    <?php
       foreach ($it as $fileinfo) {
         <h3>{$fileinfo->getFilename()}</h3>
         <p> $fileinfo->getFilename();
