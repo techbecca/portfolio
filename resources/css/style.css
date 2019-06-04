@@ -29,8 +29,8 @@ p {
 }
 
 img {
-  max-width: 500px;
-  height: auto;
+  max-height: 250px;
+  width: auto;
 }
 
 /* Old fonts
