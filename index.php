@@ -31,6 +31,7 @@
           echo "<div class=\"container\">";
           $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_PATHNAME);
           foreach ($imgIt as $imgFileinfo) {
+            //TODO: test that we actually have an image before displaying
             echo "<img src=\"".$imgIt->key()."\" >";
           }
           echo "</div>";

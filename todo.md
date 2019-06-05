@@ -1,17 +1,20 @@
-# TODO
-
-- [x] flytta index.html innehåll till index.php
-- [x] fyll img mapp med album-struktur
-- [x] fyll album med bilder
-- [] visa bilderna på index.php: traverse album directory and build static html
-  - [x] generera albumnamn
-  - [x] traversera filnamnen
-  - [x] sätt upp bilderna
-  - [/] gör bilderna lagom stora och inline-block
-  - [] gör funktioner för php filen
-  - [] gör att man går in och ut ur php-kontext istället för echo
+#
+## Features
 - [] pop-up med större bild när man klickar på bilderna
-- [x] be jesper om design-spec
+- [] sortera albums
+- [] ladda bara in bilder med filformat som stöds
+- [] ladda upp bilder
+
+## TODO
+- [] be teddy om design-spec
+- [] GET /api/albums.php (gör en fil) --> skicka JSON blob m albums
+- [] Flytta php-kod till /api/albums
+- [] Gör index.php till index.html
+- [] scripta ajax-anrop m.h.a. jQuery i index.html för att hämta album
+- [] klickbara bilder i större format
+- [] kryssa ner
+- []
+
 
 ## Php file
 Traverse album directory and build html
