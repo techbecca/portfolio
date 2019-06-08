@@ -35,14 +35,13 @@
       // Show albums in json formats
       echo json_encode($albums);
 
-    }
-    // If no albums
-    else {
+    } else {
       // Set response code - 404 Not found
       http_response_code(404);
 
       // Set error message
       echo json_encode(array('message' => "No albums found"));
     }
+
   }
  ?>
