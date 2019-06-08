@@ -15,6 +15,9 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   --->
   <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    #myButton { display: flex; justify-content: center; }
+  </style>
 </head>
 
 <body>
@@ -27,7 +30,7 @@
   </div>
 
   <h1> Gallery </h1>
-  <button id='myButton' style="align:center">Click to Hide or Show Gallery</button>
+  <button id='myButton'>Click to Hide or Show Gallery</button>
     <!-- Add jQuery lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script>
