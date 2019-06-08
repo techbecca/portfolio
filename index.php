@@ -2,7 +2,7 @@
 <html>
 
 <?php
-include 'albums.php';
+include '/api/albums.php';
 
  ?>
 
