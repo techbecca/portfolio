@@ -1,6 +1,11 @@
 
 <html>
 
+<?php
+include 'albums.php';
+
+ ?>
+
 <head>
   <meta charset="utf-8">
   <title>Techbecca's Portfolio</title>
@@ -37,6 +42,8 @@
           echo "</div>";
         }
       }
+
+      get_albums();
     ?>
   </div>
   <!--
