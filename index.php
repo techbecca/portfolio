@@ -26,18 +26,17 @@
     <br/>
   </div>
 
-  <div class="script">
-    <button id='myButton'>Click to Slide or Toggle Albums</button>
+  <h1> Gallery </h1>
+  <button id='myButton' style="align:center">Click to Slide or Toggle Albums</button>
     <!-- Add jQuery lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script>
       $("#myButton").click(function () {
           $(".albums").slideToggle("slow");
       });
-    </script>
-  </div>
+  </script>
   <div class="albums">
-    <h1> Gallery </h1>
+
     <?php
       $path = "./resources/img/albums";
       $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
