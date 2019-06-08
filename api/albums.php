@@ -26,7 +26,7 @@
   }
 
   // Get albums data from folders
-  private function get_albums($path = "./resources/img/albums";) {
+  function get_albums($path = "./resources/img/albums";) {
     var $albums = array();
     var $images;
     var $name;
