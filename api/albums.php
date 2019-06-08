@@ -27,9 +27,9 @@
 
   // Get albums data from folders
   function get_albums($path = "./resources/img/albums") {
-    var $albums = array();
-    var $images;
-    var $name;
+    $albums = array();
+    $images;
+    $name;
 
     $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
     foreach ($it as $filepath => $fileinfo) {
