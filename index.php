@@ -2,7 +2,7 @@
 <html>
 
 <?php
-include '/api/albums.php';
+//include '/api/albums.php';
 
  ?>
 
@@ -25,7 +25,6 @@ include '/api/albums.php';
     <h3>View my shit. Hopefully it's awesome.</h3>
     <br/>
   </div>
-  <p><?php echo get_albums(); ?> </p>
   <h1> Gallery </h1>
   <div class="albums">
     <?php
