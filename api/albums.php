@@ -33,7 +33,7 @@
       http_response_code(200);
 
       // Show albums in json formats
-      echo json_encode($list);
+      echo json_encode($albums);
 
     }
     // If no albums
