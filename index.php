@@ -27,7 +27,7 @@
   </div>
 
   <h1> Gallery </h1>
-  <button id='myButton' style="align:center">Click to Slide or Toggle Albums</button>
+  <button id='myButton' style="align:center">Click to Hide or Show Gallery</button>
     <!-- Add jQuery lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script>
