@@ -21,7 +21,7 @@
       http_response_code(404);
 
       // Set error message
-      echo json_encode($temp = array('message' => "No albums found");)
+      echo json_encode(array('message' => "No albums found"));
     }
   }
 
