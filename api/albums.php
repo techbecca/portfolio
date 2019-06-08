@@ -5,31 +5,7 @@
 
   function albums()
   {
-    $list = array();
-    $list = get_albums("./resources/img/albums");
-    if (sizeof($list)>0)
-    {
-      // Set response code - 200 OK
-      http_response_code(200);
-
-      // Show albums in json formats
-      echo json_encode($list);
-
-    }
-    else {
-      // Set response code - 404 Not found
-      http_response_code(404);
-
-      // Set error message
-      echo json_encode(array('message' => "No albums found"));
-    }
-  }
-
-  // Get albums data from folders
-  function get_albums($path = "./resources/img/albums") {
     $albums = array();
-    $images;
-    $name;
 
     $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
     foreach ($it as $filepath => $fileinfo) {
@@ -49,6 +25,24 @@
         $albums[$name]=$images;
       }
     }
-    return $albums;
+
+    // Check if images are there
+    if (sizeof($albums)>0)
+    {
+      // Set response code - 200 OK
+      http_response_code(200);
+
+      // Show albums in json formats
+      echo json_encode($list);
+
+    }
+    // If no albums
+    else {
+      // Set response code - 404 Not found
+      http_response_code(404);
+
+      // Set error message
+      echo json_encode(array('message' => "No albums found"));
+    }
   }
  ?>
