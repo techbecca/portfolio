@@ -25,6 +25,10 @@
     <h3>View my shit. Hopefully it's awesome.</h3>
     <br/>
   </div>
+
+  <div class="script">
+    <button id='myButton'>Click to Slide or Toggle</button>
+  </div>
   <h1> Gallery </h1>
   <div class="albums">
     <?php
