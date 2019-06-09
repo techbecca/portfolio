@@ -19,14 +19,18 @@
     }
   }
   // Check if images are there
-  if (sizeof($albums)>0) {
+  if (sizeof($albums)>0)
+  {
     // Set response code - 200 OK
     http_response_code(200);
+
     // Show albums in json formats
     echo json_encode($albums);
+
   } else {
     // Set response code - 404 Not found
     http_response_code(404);
+
     // Set error message
     echo json_encode(array('message' => "No albums found"));
   }
