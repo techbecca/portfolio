@@ -4,7 +4,7 @@
   header("Content-Type: application/json; charset=UTF-8");
 
   $albums = array();
-
+  $path = "./resources/img/albums";
   $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
   foreach ($it as $filepath => $fileinfo) {
     // If it's an album and not a file
