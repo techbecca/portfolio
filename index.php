@@ -1,23 +1,11 @@
 
 <html>
 
-<?php
-//include './api/albums.php';
-
- ?>
-
 <head>
   <meta charset="utf-8">
   <title>Techbecca's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
-  <!-- Old fonts
-  <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  --->
   <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
-  <style type="text/css">
-    #myButton { display: flex; justify-content: center; }
-  </style>
 </head>
 
 <body>
@@ -39,7 +27,6 @@
       });
   </script>
   <div class="albums">
-
     <?php
       $path = "./resources/img/albums";
       $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
