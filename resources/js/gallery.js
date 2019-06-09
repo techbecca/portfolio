@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 function showAlbums(){
   $.get("./api/albums.php", function(data, status){
-    alert("Data: " + data + "\nStatus: " + status);
+    $(#status).text(status);
   });
 
 }
