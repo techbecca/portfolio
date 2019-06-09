@@ -19,9 +19,9 @@ class Album
     }
   }
 
-  private function get_images($path) {
+  private function get_images($path="") {
     $images = array();
-    if ($path=="" || is_string($path) == FALSE) {
+    if ($path="" || is_string($path) == FALSE) {
       throw new \Exception("No path was given", 1);
     } else {
       // Collect the images
