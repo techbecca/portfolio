@@ -13,15 +13,15 @@ class Album
   {
     $this->$name = $name;
     $this->$path = $path;
-    $this->$images = $this->get_images($path);
+    $this->$images = get_images($path);
     if (sizeof($images)>0) {
       $this->$empty = FALSE;
     }
   }
 
-  private function get_images($path="") {
+  function get_images($path="") {
     $images = array();
-    if ($path="" || is_string($path) == FALSE) {
+    if ($path="" && is_string($path)) {
       throw new \Exception("No path was given", 1);
     } else {
       // Collect the images
