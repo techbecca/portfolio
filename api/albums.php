@@ -13,12 +13,13 @@
       $name = $fileinfo->getFilename();
       // Collect the images
       $images = array();
+      // TODO: use glob() to only get valid img formats
       $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_PATHNAME);
       foreach ($imgIt as $imgFileinfo) {
         //TODO: test that we actually have an image before displaying
         array_push($images, $imgIt->key());
       }
-      // TODO: use glob() to only get valid img formats
+
       // Enter a key-value pair with name and a scan of the directory
       $albums[$name]=$images;
     }
