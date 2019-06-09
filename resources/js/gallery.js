@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 function showAlbums(){
-  $.get("./api/albums.php", function(data, status){
+  $.getJSON("./api/albums.php", function(data, status){
     $(#status).text(status);
   });
 
