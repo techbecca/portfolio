@@ -13,8 +13,11 @@ $(document).ready(function() {
 });
 
 function showAlbums(){
-  $.getJSON("./api/albums.php", function(data, status){
-    console.log(data);
+  $.getJSON("./api/albums.php", function(albums, status){
+    console.log(albums);
+    for (var key in albums) {
+      console.log(key);
+    }
   });
 
 }
