@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 function showAlbums(){
   $.getJSON("./api/albums.php", function(data, status){
-    console.log(data.sort());
+    console.log(data);
   });
 
 }
