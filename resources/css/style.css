@@ -1,3 +1,8 @@
+html {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+}
+
 body {
   background-color: #fbf9f9;
   color: #3f4156;
@@ -44,18 +49,17 @@ Albums: Flexbox
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
 }
 
 .albums img {
-    width: auto;
-    max-height: 250px;
-    margin: 5px;
+  width: auto;
+  max-height: 250px;
+  margin: 5px;
 }
-
 
 .header {
   height: 280px;
@@ -74,9 +78,7 @@ a {
 Color palette coming from dribbble.com, https://dribbble.com/shots/4334912-Cure-Mobile-App#
 See images/palette.png for reference
 */
-
 /* Background colors */
-
 .background-red {
   background: #f36465;
 }
@@ -102,7 +104,6 @@ See images/palette.png for reference
 }
 
 /* Text colors */
-
 .red {
   color: #f36465;
 }
@@ -128,7 +129,6 @@ See images/palette.png for reference
 }
 
 /* SASS */
-
 /*
 $swatch_1: #f36465;
 $swatch_2: #fbf9f9;
@@ -137,9 +137,7 @@ $swatch_4: #eccfd0;
 $swatch_5: #3f4156;
 $swatch_6: #ffc2b4;
 */
-
 /* LESS */
-
 /*
 @swatch_1: #f36465;
 @swatch_2: #fbf9f9;
