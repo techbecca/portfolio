@@ -2,8 +2,8 @@
 - [] be teddy om design-spec
 - [] Sätt up features som issues i Github projektet
 - [x] GET /api/albums.php (gör en fil) --> skicka JSON blob m albums
-- [/] Flytta php-kod till /api/albums
-- [] Gör index.php till index.html
+- [x] Flytta php-kod till /api/albums
+- [x] Gör index.php till index.html
 - [] scripta ajax-anrop m.h.a. jQuery i index.html för att hämta album
 - [] klickbara bilder i större format
 - [] kryssa ner
