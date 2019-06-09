@@ -1,12 +1,6 @@
-#
-## Features
-- [] pop-up med större bild när man klickar på bilderna
-- [] sortera albums
-- [] ladda bara in bilder med filformat som stöds
-- [] ladda upp bilder
-
-## TODO
+# TODO
 - [] be teddy om design-spec
+- [] Sätt up features som issues i Github projektet
 - [] GET /api/albums.php (gör en fil) --> skicka JSON blob m albums
 - [] Flytta php-kod till /api/albums
 - [] Gör index.php till index.html
@@ -15,13 +9,8 @@
 - [] kryssa ner
 - []
 
-
-## Php file
-Traverse album directory and build html
-![](/resources/img/todo-3.jpg)
-
-## Design picture
-![design](/resources/img/todo-2.jpg)
-
-## Img folder structure
-![](/resources/img/todo-1.jpg)
+## Features-to-implement
+- [] pop-up med större bild när man klickar på bilderna
+- [] sortera albums
+- [] ladda bara in bilder med filformat som stöds
+- [] ladda upp bilder
