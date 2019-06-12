@@ -21,9 +21,9 @@ function showAlbums(){
       // Append heading to albums div
       $('<h2>'+key+'</h2>').appendTo("#albums");
       // Add container element with album name as id
-      var container = $(document).createElement('div')
+      var container = $(document.createElement('div'));
       container.attr('class', 'container');
-      container.attr('id', key)
+      container.attr('id', key);
       container.addTo("#gallery")
       // Get array of images
       var images = albums[album];
