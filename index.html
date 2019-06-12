@@ -18,25 +18,7 @@
   </div>
   <div class="gallery">
     <h1> Gallery </h1>
-    <div class="albums">
-      <!--
-    <?php
-      $path = "./resources/img/albums";
-      $it = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
-      foreach ($it as $filepath => $fileinfo) {
-        if ($fileinfo->isDir()) {
-          echo "<h2>".$fileinfo->getFilename()."</h2>";
-          echo "<div class=\"container\">";
-          $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_PATHNAME);
-          foreach ($imgIt as $imgFileinfo) {
-            //TODO: test that we actually have an image before displaying
-            echo "<img src=\"".$imgIt->key()."\" >";
-          }
-          echo "</div>";
-        }
-      }
-    ?>-->
-    </div>
+    <div class="albums"></div>
   </div>
 
   <!-- Add jQuery lib -->
