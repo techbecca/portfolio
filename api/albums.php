@@ -32,9 +32,9 @@
     echo json_encode($albums);
   } else {
     // Set response code - 404 Not found
-    http_response_code(404);
+    http_response_code(200);
     // Set error message
-    echo json_encode(array('message' => "No albums found"));
+    echo json_encode(array());
   }
 
 
