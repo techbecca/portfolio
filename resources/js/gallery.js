@@ -1,12 +1,4 @@
 $(document).ready(function() {
-  // gallery html
-  var gallery_html = `
-      <h1> Gallery </h1>
-      <p> Hello world </p>
-    `;
-
-  // inject to 'gallery' in index.html
-  $("#gallery").html(gallery_html);
 
   showAlbums();
 
@@ -24,7 +16,7 @@ function showAlbums(){
       var container = $(document.createElement('div'));
       container.attr('class', 'container');
       container.attr('id', key);
-      container.appendTo("#gallery")
+      container.appendTo("#albums")
       // Get array of images
       var images = albums[key];
       // For each image:
