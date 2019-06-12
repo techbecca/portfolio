@@ -25,8 +25,10 @@ function showAlbums(){
       container.attr('class'. 'container');
       container.attr('id', key)
       container.addTo("#gallery")
+      // Get array of images
+      var images = albums[album];
       // For each image:
-      for (imgSrc of albums[album]) {
+      for (imgSrc of images) {
         // Create image element
         var img = $(document.createElement('img'));
         // Add source attribute
