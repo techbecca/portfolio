@@ -14,7 +14,6 @@ function showAlbums(){
       // Add container element with album name as id
       var container = $(document.createElement('div'));
       container.attr('class', 'container');
-      container.attr('id', key);
       container.appendTo(".albums")
       // Get array of images
       var images = albums[key];
@@ -25,7 +24,7 @@ function showAlbums(){
         // Add source attribute
         img.attr('src', imgSrc);
         // Append image to albums div
-        img.appendTo("#"+key+"");
+        container.append(img);
       }
     }
   });
