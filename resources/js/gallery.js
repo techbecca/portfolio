@@ -26,7 +26,7 @@ function showAlbums(){
       container.attr('id', key);
       container.appendTo("#gallery")
       // Get array of images
-      var images = albums[album];
+      var images = albums[key];
       // For each image:
       for (imgSrc of images) {
         // Create image element
