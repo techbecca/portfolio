@@ -5,8 +5,8 @@
 -   [x] GET /api/albums.php (gör en fil) --> skicka JSON blob m albums
 -   [x] Flytta php-kod till /api/albums
 -   [x] Gör index.php till index.html
--   \[] scripta ajax-anrop m.h.a. jQuery i index.html för att hämta album
--   \[] klickbara bilder i större format
+-   [x] scripta ajax-anrop m.h.a. jQuery i index.html för att hämta album
+-   \[] klickbara bilder i större format (modal)
 -   \[] kryssa ner
 -   \[]
 
@@ -16,3 +16,4 @@
 -   \[] sortera albums
 -   \[] ladda bara in bilder med filformat som stöds
 -   \[] ladda upp bilder
+-   \[] byta till java
