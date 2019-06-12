@@ -20,6 +20,11 @@ function showAlbums(){
       // Create element for html heading
       // Append heading to albums div
       $('<h2>'+key+'</h2>').appendTo("#albums");
+      // Add container element with album name as id
+      var container = $(document).createElement('div')
+      container.attr('class'. 'container');
+      container.attr('id', key)
+      container.addTo("#gallery")
       // For each image:
       for (imgSrc of images[album]) {
         // Create image element
@@ -27,7 +32,7 @@ function showAlbums(){
         // Add source attribute
         img.attr('src', imgSrc);
         // Append image to albums div
-        img.appendTo("#albums");
+        img.appendTo("#"+key+"");
       }
     }
   });
