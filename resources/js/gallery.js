@@ -24,7 +24,7 @@ function showAlbums(){
       var container = $(document.createElement('div'));
       container.attr('class', 'container');
       container.attr('id', key);
-      container.addTo("#gallery")
+      container.appendTo("#gallery")
       // Get array of images
       var images = albums[album];
       // For each image:
