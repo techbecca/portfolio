@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-  showAlbums();
-
-});
-
-function showAlbums() {
   $.getJSON("./api/albums.php", function(albums, status) {
     // Loop through albums, for each album:
     for (var key in albums) {
@@ -27,4 +22,4 @@ function showAlbums() {
     }
   });
 
-}
+});
