@@ -16,6 +16,9 @@ $(document).ready(function() {
         });
         // Append image to container div
         container.append(img);
+
+        // Append modal
+        //container.append(createModal(img));
       }
       // Append container to album
       container.appendTo(".albums");
@@ -23,3 +26,7 @@ $(document).ready(function() {
   });
 
 });
+
+function createModal(img) {
+
+}
