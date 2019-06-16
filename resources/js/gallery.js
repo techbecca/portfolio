@@ -14,20 +14,27 @@ $(document).ready(function() {
         var img = $('<img />', {
           src: imgSrc
         });
+        // Create modal
+        var modal = $("#myModal").clone();
         img.click(function() {
-          $("#myModal").show();
-          $("#img01").attr('src', imgSrc);
+          modal.show();
+          modal.find('img').attr('src', imgSrc);
         });
-        // Append image to container div
+        // Append image & modal to container div
         container.append(img);
+        container.append(modal);
+
       }
       // Append container to album
       container.appendTo(".albums");
     }
   });
 
+  // When you click any close Button
+  // TODO: make it so it only closes the specific modal
   $(".close").click(function() {
-    $("#myModal").hide();
+    // Hides all modals
+    $(".modal").hide();
   })
 
 });
