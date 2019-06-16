@@ -19,20 +19,15 @@ $(document).ready(function() {
           src: imgSrc,
           id: imgId
         });
-
-        // Create modal
-        let modalId = 'modal-' + imgId;
-        var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
-        var modalContent = modal.children('img').attr('id', 'modal-content-'+imgId);
-        //console.log(modal);
-        // Append image & modal to albumContainer div
-        albumContainer.append(img);
-        albumContainer.append(modal);
-
-
-      } // End album generation
-      // Append album albumContainer to albums
-      albumContainer.appendTo(".albums");
+        img.click(function() {
+          $("#myModal").show();
+          $("#img01").attr('src', imgSrc);
+        });
+        // Append image to container div
+        container.append(img);
+      }
+      // Append container to album
+      container.appendTo(".albums");
     }
 
     $.each($("div.albums").children('img'), function(index, image){
@@ -53,5 +48,9 @@ $(document).ready(function() {
     });
 
   });
+
+  $(".close").click(function() {
+    $("#myModal").hide();
+  })
 
 });
