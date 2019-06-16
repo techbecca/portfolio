@@ -14,6 +14,10 @@ $(document).ready(function() {
         var img = $('<img />', {
           src: imgSrc
         });
+        img.click(function() {
+          $("#myModal").show();
+          $("#img01").attr('src', imgSrc);
+        });
         // Append image to container div
         container.append(img);
       }
@@ -21,5 +25,9 @@ $(document).ready(function() {
       container.appendTo(".albums");
     }
   });
+
+  $(".close").click(function() {
+    $("#myModal").hide();
+  })
 
 });
