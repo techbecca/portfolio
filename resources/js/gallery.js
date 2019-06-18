@@ -21,16 +21,18 @@ $(document).ready(function() {
         });
 
         // Create modal
-        var modal = $("#myModal").clone().removeAttr('id');
+        let modalId = 'modal-' + imgId;
+        var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
+        tempModal = $('#' + modalId);
         img.click(function() {
-          modal.show();
-          modal.children('img').attr('src', imgSrc);
+          tempModal.children('.modal-content').attr('src', $(this).src);
+          tempModal.show();
         });
 
         // When you click any close Button
-        modal.find(".close").click(function() {
+        tempModal.find(".close").click(function() {
           // Hides all modals
-          modal.hide();
+          tempModal.hide();
         })
 
         // Append image & modal to albumContainer div
