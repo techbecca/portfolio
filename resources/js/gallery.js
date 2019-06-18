@@ -24,11 +24,6 @@ $(document).ready(function() {
         let modalId = 'modal-' + imgId;
         var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
         //console.log(modal);
-        console.log(modal.children('.modal-content'));
-        modal.children('.modal-content').attr({
-          src: img.src
-        });
-        console.log(modal.children('.modal-content'));
         // Append image & modal to albumContainer div
         albumContainer.append(img);
         albumContainer.append(modal);
@@ -39,8 +34,8 @@ $(document).ready(function() {
       albumContainer.appendTo(".albums");
     }
 
-    $.each($("div.albums").find('img'), function(index, image){
-      console.log("Index: " + index + " Src: " + image.src);
+    $.each($("div.albums").children('img'), function(index, image){
+      $('#modal-'+image.id).children('img').attr('src', image.src);
     })
   });
 
