@@ -23,21 +23,20 @@ $(document).ready(function() {
         // Create modal
         let modalId = 'modal-' + imgId;
         var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
-        console.log(modal);
+        //console.log(modal);
         // Append image & modal to albumContainer div
         albumContainer.append(img);
-        //albumContainer.append(modal);
+        albumContainer.append(modal);
 
 
       } // End album generation
       // Append album albumContainer to albums
       albumContainer.appendTo(".albums");
     }
+
+    $.each($("div.albums").find('img'), function(index, img){
+      console.log("Index: " + index + " Src: " + image.src);
+    })
   });
-
-  $.each($("div.albums").find('img'), function(index, img){
-    console.log("Index: " + index + " Src: " + image.src);
-  })
-
 
 });
