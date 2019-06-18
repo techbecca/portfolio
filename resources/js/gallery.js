@@ -36,8 +36,21 @@ $(document).ready(function() {
     }
 
     $.each($("div.albums").children('img'), function(index, image){
+      let modalId = '#modal-' + imgId;
       let modalContentId = '#modal-content'+image.id;
-      console.log($(modalContentId).attr('src', image.src));
+      console.log("Index: " + index + " Src: " + image.src);
+      // Add click-on img to open modal
+      image.click(function() {
+        $(modalContentId).attr('src', $(this).src);
+        $(modalId).show();
+      });
+
+      // When you click the close button
+      $()(".close").click(function() {
+        // Hides the modal
+        $(modalId).hide();
+      })
+    });
     })
   });
 
