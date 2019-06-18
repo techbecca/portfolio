@@ -23,21 +23,22 @@ $(document).ready(function() {
         // Create modal
         let modalId = 'modal-' + imgId;
         var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
-        tempModal = $('#' + modalId);
-        img.click(function() {
-          tempModal.children('.modal-content').attr('src', $(this).src);
-          tempModal.show();
-        });
-
-        // When you click any close Button
-        tempModal.find(".close").click(function() {
-          // Hides all modals
-          tempModal.hide();
-        })
 
         // Append image & modal to albumContainer div
         albumContainer.append(img);
         albumContainer.append(modal);
+
+        // Add click-on img to open modal
+        img.click(function() {
+          modal.children('.modal-content').attr('src', img.src);
+          modal.show();
+        });
+
+        // When you click the close button
+        modal.find(".close").click(function() {
+          // Hides the modal
+          modal.hide();
+        })
 
       } // End album generation
       // Append album albumContainer to albums
