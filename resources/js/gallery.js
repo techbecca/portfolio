@@ -21,16 +21,33 @@ $(document).ready(function() {
         });
 
         // Create modal
-        var modal = $("#myModal").clone().removeAttr('id');
+
+        // <!-- The Modal -->
+        // <div id="myModal" class="modal">
+        //   <!-- The Close Button -->
+        //   <span class="close">&times;</span>
+        //   <!-- Modal Content (The Image) -->
+        //   <img class="modal-content">
+        //   <!-- Modal Caption (Image Text) -->
+        //   <div id="caption"></div>
+        // </div>
+        modalId = "modal-"+imgId;
+        var modal = $('div').attr('class', 'modal').attr('id', modalId);
+        modal.append($('span').text('&times;').attr('close'));
+        modal.append($('img').attr({
+          class: "modal-content",
+          src: imgSrc,
+          alt: imgId
+        }));
         img.click(function() {
-          modal.show();
-          modal.children('img').attr('src', imgSrc);
+          $('#'+modalId).children('.modal-content').attr('src', $(this).src);
+          $('#'+modalId).show();
         });
 
         // When you click any close Button
-        modal.find(".close").click(function() {
+        $('#'+modalId).children(".close").click(function() {
           // Hides all modals
-          modal.hide();
+          $('#'+modalId).hide();
         })
 
         // Append image & modal to albumContainer div
