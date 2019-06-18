@@ -41,8 +41,8 @@ $(document).ready(function() {
       console.log("Index: " + index + " Src: " + image.src);
       // Add click-on img to open modal
       image.click(function() {
-        $(modalContentId).attr('src', $(this).src);
         $(modalId).show();
+        $(modalContentId).attr('src', $(this).src);
       });
 
       // When you click the close button
