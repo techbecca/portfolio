@@ -21,8 +21,9 @@ $(document).ready(function() {
         });
 
         // Create modal
-        // let modalId = 'modal-' + imgId;
-        // var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
+        let modalId = 'modal-' + imgId;
+        var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
+        console.log(modal);
         // Append image & modal to albumContainer div
         albumContainer.append(img);
         //albumContainer.append(modal);
