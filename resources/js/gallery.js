@@ -35,7 +35,7 @@ $(document).ready(function() {
     }
 
     $.each($("div.albums").children('img'), function(index, image){
-      $('#modal-'+image.id).children('img').attr('src', image.src);
+      console.log($('#modal-'+image.id).children('img').attr('src', image.src));
     })
   });
 
