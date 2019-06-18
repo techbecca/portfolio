@@ -36,9 +36,9 @@ $(document).ready(function() {
     }
 
     $.each($("div.albums").children('img'), function(index, image){
-      let modalId = '#modal-' + image.id;
-      let modalContentId = '#modal-content'+image.id;
       console.log("Index: " + index + " Src: " + image.src);
+      let modalId = '#modal-' + image.id;
+      let modalContentId = '#modal-content-'+image.id;
       // Add click-on img to open modal
       image.click(function() {
         $(modalId).show();
