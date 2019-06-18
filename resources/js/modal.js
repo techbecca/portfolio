@@ -1,6 +1,7 @@
 $(function(){
   // Find all images in gallery
   var images = $('.gallery').find('img');
+  console.log(images);
   // For each
   $.each(images, function(index, image){
     console.log("Index: " + index + " Src: " + image.src);
