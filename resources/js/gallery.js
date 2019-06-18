@@ -23,7 +23,6 @@ $(document).ready(function() {
         // Create modal
         let modalId = 'modal-' + imgId;
         var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
-
         // Append image & modal to albumContainer div
         albumContainer.append(img);
         albumContainer.append(modal);
@@ -35,9 +34,9 @@ $(document).ready(function() {
         });
 
         // When you click the close button
-        modal.find(".close").click(function() {
+        $(".close").click(function() {
           // Hides the modal
-          modal.hide();
+          $(".modal").hide();
         })
 
       } // End album generation
