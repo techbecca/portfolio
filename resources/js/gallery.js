@@ -21,23 +21,11 @@ $(document).ready(function() {
         });
 
         // Create modal
-        let modalId = 'modal-' + imgId;
-        var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
+        // let modalId = 'modal-' + imgId;
+        // var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
         // Append image & modal to albumContainer div
         albumContainer.append(img);
-        albumContainer.append(modal);
-
-        // Add click-on img to open modal
-        img.click(function() {
-          modal.children('.modal-content').attr('src', img.src);
-          modal.show();
-        });
-
-        // When you click the close button
-        $(".close").click(function() {
-          // Hides the modal
-          $(".modal").hide();
-        })
+        //albumContainer.append(modal);
 
       } // End album generation
       // Append album albumContainer to albums
