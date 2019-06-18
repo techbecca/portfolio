@@ -27,9 +27,16 @@ $(document).ready(function() {
         albumContainer.append(img);
         //albumContainer.append(modal);
 
+
       } // End album generation
       // Append album albumContainer to albums
       albumContainer.appendTo(".albums");
     }
   });
+
+  $.each($("div.albums").find('img'), function(index, img){
+    console.log("Index: " + index + " Src: " + image.src);
+  })
+
+
 });
