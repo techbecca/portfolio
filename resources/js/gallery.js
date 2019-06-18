@@ -5,9 +5,9 @@ $(document).ready(function() {
     for (var albumName in albums) {
       // Create element for html heading & Append heading to albums div
       $('<h2>' + albumName + '</h2>').appendTo(".albums");
-      // Add container element with album name as id
-      var container = $('<div>');
-      container.attr('class', 'container');
+      // Add albumContainer element with album name as id
+      var albumContainer = $('<div>');
+      albumContainer.attr('class', 'container');
       // For each image:
       let i = 0;
       for (imgSrc of albums[albumName]) {
@@ -21,26 +21,25 @@ $(document).ready(function() {
         });
 
         // Create modal
-        var modal = $("#myModal").clone().removeAttr('id').attr('id', 'modal_${imgId}');
+        var modal = $("#myModal").clone().removeAttr('id');
         img.click(function() {
           modal.show();
-          modal.find('.modal-content').attr('src', imgSrc);
+          modal.children('img').attr('src', imgSrc);
         });
 
         // When you click any close Button
-        // TODO: make it so it only closes the specific modal
         modal.find(".close").click(function() {
           // Hides all modals
           modal.hide();
         })
 
-        // Append image & modal to container div
-        container.append(img);
-        container.append(modal);
+        // Append image & modal to albumContainer div
+        albumContainer.append(img);
+        albumContainer.append(modal);
 
-      }
-      // Append container to album
-      container.appendTo(".albums");
+      } // End album generation
+      // Append album albumContainer to albums
+      albumContainer.appendTo(".albums");
     }
   });
 });
