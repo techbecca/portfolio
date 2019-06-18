@@ -23,6 +23,7 @@ $(document).ready(function() {
         // Create modal
         let modalId = 'modal-' + imgId;
         var modal = $("#myModal").clone().removeAttr('id').attr('id', modalId);
+        var modalContent = modal.children('img').attr('id', 'modal-content-'+imgId);
         //console.log(modal);
         // Append image & modal to albumContainer div
         albumContainer.append(img);
@@ -35,7 +36,8 @@ $(document).ready(function() {
     }
 
     $.each($("div.albums").children('img'), function(index, image){
-      console.log($('#modal-'+image.id).children('img').attr('src', image.src));
+      let modalContentId = '#modal-content'+image.id;
+      console.log($(modalContentId).attr('src', image.src));
     })
   });
 
