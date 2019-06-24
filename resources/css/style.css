@@ -15,6 +15,7 @@ h1 {
   line-height: 62px;
   font-size: 5rem;
   text-align: center;
+  padding: 5rem;
 }
 
 h2 {
@@ -47,10 +48,6 @@ main.header {
   color: #fbf9f9;
   text-align: center;
   padding: 10rem;
-}
-
-section.gallery {
-  padding: 5rem;
 }
 
 /*
