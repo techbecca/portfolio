@@ -5,8 +5,9 @@ $(document).ready(function() {
   $.getJSON(environment + "/api/albums.php", function(albums, status) {
     // Loop through albums, for each album:
     for (var albumName in albums) {
+      var section = $('<section>').attr('class', 'album').attr('id', albumName);
       // Create element for html heading & Append heading to albums div
-      $('<h2>' + albumName + '</h2>').appendTo(".albums");
+      $('<h2>' + albumName + '</h2>').appendTo(section);
       // Add container element with album name as id
       var container = $('<div>');
       container.attr('class', 'container');
@@ -31,7 +32,8 @@ $(document).ready(function() {
         container.append(img);
       }
       // Append container to album
-      container.appendTo(".albums");
+      container.appendTo(section);
+      section.appendTo(".albums")
     }
 
 
