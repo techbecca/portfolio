@@ -33,7 +33,7 @@ $(document).ready(function() {
       }
       // Append container to album
       container.appendTo(section);
-      section.appendTo(".albums")
+      section.appendTo(".gallery")
     }
 
 

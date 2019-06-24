@@ -53,11 +53,11 @@ main.header {
 /*
 Albums: Flexbox
 */
-.albums {
+.gallery {
   text-align: center;
 }
 
-.albums h2 {
+.gallery h2 {
   font-size: 32px;
   line-height: 36px;
   padding-top: 5rem;
@@ -65,7 +65,7 @@ Albums: Flexbox
   background: #ffc2b4;
 }
 
-.albums img {
+.gallery img {
   width: auto;
   max-height: 250px;
   margin: 5px;
