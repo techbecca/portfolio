@@ -40,7 +40,7 @@ a {
 }
 
 /* Sections */
-main.header {
+.header {
   height: 280px;
   /* red */
   background: #f36465;
@@ -51,7 +51,7 @@ main.header {
 }
 
 /*
-Albums: Flexbox
+Gallery: Flexbox
 */
 .gallery {
   text-align: center;
