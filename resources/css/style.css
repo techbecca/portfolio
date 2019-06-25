@@ -22,7 +22,7 @@ h1 {
   padding: 5rem;
 }
 
-h2 {
+h2, h3, h4, h5, h6 {
   /* font-family: 'Dancing Script', cursive;
   font-weight: 700;
   text-transform: uppercase;
@@ -30,8 +30,7 @@ h2 {
   line-height: 23px;
   letter-spacing: 2px; */
   Font-Family: 'Work Sans', Sans-Serif;
-  Font-Size: 35px;
-  padding: 2rem;
+  padding: inherit;
 }
 
 p {
