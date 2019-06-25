@@ -56,6 +56,24 @@ a {
   padding: 10rem;
 }
 
+/* Banner Section */
+#banner {
+  background-image: url('resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 46rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 3.75rem;
+  color: white;
+}
+
 /*
 Gallery: Flexbox
 */
