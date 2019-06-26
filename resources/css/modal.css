@@ -1,6 +1,6 @@
 /* Style the Image Used to Trigger the Modal */
 .gallery img {
-  /* border-radius: 5px; */
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
