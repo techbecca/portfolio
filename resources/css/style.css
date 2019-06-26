@@ -4,9 +4,8 @@ html {
 }
 
 body {
-  background-color: #fbf9f9;
-  color: #3f4156;
-  margin: 0;
+  color: #153143;
+  background-color: #F8F2F4;
 }
 
 h1 {
@@ -91,11 +90,8 @@ Gallery: Flexbox
 }
 
 .gallery h2 {
-  /* font-size: 32px;
-  line-height: 36px;
-  padding-top: 5rem; */
-  /* rosySkin */
-  background: #ffc2b4;
+  padding: 5rem;
+  background-color: #9B7282;
   text-transform: capitalize;
 }
 
