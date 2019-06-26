@@ -11,14 +11,17 @@ body {
 
 h1 {
   Font-Family: 'Work Sans', Sans-Serif;
-  Font-Size: 45px;
+  Font-Size: 3rem;
   text-align: center;
   padding: 5rem;
 }
 
 h2, h3, h4, h5, h6 {
   Font-Family: 'Work Sans', Sans-Serif;
-  padding: inherit;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 p {
@@ -61,17 +64,19 @@ Gallery: Flexbox
   padding-top: 5rem; */
   /* rosySkin */
   background: #ffc2b4;
+  text-transform: capitalize;
 }
 
 .gallery img {
   width: auto;
   max-height: 250px;
   padding: 1rem;
+  margin: 1rem;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
+  padding: 3rem;
   justify-content: space-evenly;
 }
