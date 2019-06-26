@@ -21,6 +21,7 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 2rem;
+  padding: 3rem;
 }
 
 p {
@@ -38,7 +39,9 @@ header {
   width: 100%;
   z-index: 10;
   background-color: #9B7282;
-  opacity: 0.85;
+  opacity: 0.96;
+  transition: transform .5s ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .1);
 }
 
 nav {
@@ -68,7 +71,7 @@ nav li {
   background-image: url('..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
   background-position: center;
   background-size: cover;
-  height: 46rem;
+  height: 58rem;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -85,20 +88,25 @@ nav li {
 Gallery: Flexbox
 */
 .gallery {
+  background: #ECC9C9;
+  padding: 5rem;
   text-align: center;
 }
 
 .gallery h2 {
-  padding: 3rem;
-  background-color: #CB6D6B;
   text-transform: capitalize;
 }
 
 .gallery img {
   width: 20rem;
   height: auto;
-  padding: 1rem;
   margin: 1rem;
+}
+
+.album {
+  background: #F8F2F4;
+  border-radius: 5px;
+  margin: 5rem;
 }
 
 .container {
