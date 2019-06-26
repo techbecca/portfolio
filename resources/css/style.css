@@ -36,10 +36,9 @@ a {
 header {
   position: fixed;
   width: 100%;
-  background-color: #fbf9f9;
   z-index: 10;
   background-color: #9B7282;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 nav {
@@ -79,7 +78,7 @@ nav li {
 
 #banner h1 {
   font-size: 3.75rem;
-  color: white;
+  color: #F8F2F4;
 }
 
 /*
@@ -90,8 +89,8 @@ Gallery: Flexbox
 }
 
 .gallery h2 {
-  padding: 5rem;
-  background-color: #9B7282;
+  padding: 3rem;
+  background-color: #CB6D6B;
   text-transform: capitalize;
 }
 
