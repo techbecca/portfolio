@@ -68,8 +68,8 @@ Gallery: Flexbox
 }
 
 .gallery img {
-  width: auto;
-  max-height: 250px;
+  width: 28%;
+  height: auto;
   padding: 1rem;
   margin: 1rem;
 }
@@ -79,4 +79,5 @@ Gallery: Flexbox
   flex-wrap: wrap;
   padding: 3rem;
   justify-content: space-evenly;
+  align-items: center;
 }
