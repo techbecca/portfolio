@@ -93,6 +93,13 @@ Gallery: Flexbox
   text-align: center;
 }
 
+.gallery p {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  padding: 2rem;
+}
+
 .gallery h2 {
   text-transform: capitalize;
 }
