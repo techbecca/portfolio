@@ -33,6 +33,38 @@ a {
   color: inherit;
 }
 
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fbf9f9;
+  z-index: 10;
+  background-color: #9B7282;
+  opacity: 0.8;
+}
+
+nav {
+  padding: 1.33rem;
+  direction: rtl;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav li {
+  color: #fbf9f9;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  width: 8rem;
+  text-align: center;
+}
+
 /* Banner Section */
 #banner {
   background-image: url('..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
