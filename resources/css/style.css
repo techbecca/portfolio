@@ -26,6 +26,7 @@ h2 {
 p {
   Font-Family: 'Open Sans', Sans-Serif;
   Font-Size: 1rem;
+  list-style: 1.25rem;
 }
 
 a {
@@ -70,7 +71,7 @@ nav li {
   background-image: url('..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
   background-position: center;
   background-size: cover;
-  height: 52rem;
+  height: 46rem;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -95,7 +96,7 @@ Gallery: Flexbox
 .gallery p {
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 75%;
   padding: 2rem;
 }
 
