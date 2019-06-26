@@ -21,12 +21,11 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 2rem;
-  padding: 3rem;
 }
 
 p {
   Font-Family: 'Open Sans', Sans-Serif;
-  Font-Size: 15px;
+  Font-Size: 1rem;
 }
 
 a {
@@ -46,7 +45,7 @@ header {
 
 nav {
   padding: 1.33rem;
-  direction: rtl;
+  text-align: right;
 }
 
 nav a {
@@ -62,7 +61,7 @@ nav li {
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   display: inline-block;
-  width: 8rem;
+  padding: 0.5rem 1rem;
   text-align: center;
 }
 
@@ -89,7 +88,7 @@ Gallery: Flexbox
 */
 .gallery {
   background: #ECC9C9;
-  padding: 5rem;
+  padding: 6rem;
   text-align: center;
 }
 
@@ -105,7 +104,7 @@ Gallery: Flexbox
 }
 
 .gallery img {
-  width: 20rem;
+  max-width: 10rem;
   height: auto;
   margin: 1rem;
 }
@@ -113,7 +112,8 @@ Gallery: Flexbox
 .album {
   background: #F8F2F4;
   border-radius: 5px;
-  margin: 5rem;
+  padding: 3rem;
+  margin: 4rem 2rem;
 }
 
 .container {
@@ -127,5 +127,13 @@ Gallery: Flexbox
 @media only screen and (max-width: 768px) {
   html {
     font-size: 20px;
+  }
+
+  section.gallery {
+    padding: 3rem;
+  }
+
+  nav {
+    text-align: center;
   }
 }
