@@ -24,7 +24,7 @@ $(document).ready(function() {
           alt: imgId
         });
         img.click(function() {
-          $("#myModal").show();
+          $("#myModal").css('display', 'flex');
           $("#img01").attr('src', $(this).attr('src'));
           $("#caption").text($(this).attr('alt'));
         });
