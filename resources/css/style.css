@@ -113,25 +113,20 @@ Gallery: Flexbox
 .album {
   background: #F8F2F4;
   border-radius: 5px;
-  padding: 3rem;
-  margin: 4rem 2rem;
+  padding: 2rem;
+  margin: 4rem 3rem;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding: 3rem;
   justify-content: space-evenly;
   align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
-  html {
-    font-size: 20px;
-  }
-
-  section.gallery {
-    padding: 3rem;
+  .gallery {
+    padding: 0rem;
   }
 
   nav {
