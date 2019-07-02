@@ -31,32 +31,31 @@
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
   /* Black w/ opacity */
-  /* Flexboxing */
   flex-wrap: wrap;
-  /* Center flex items vertically and horizontally */
-  justify-content: center;
+  /* Flexboxing */
   align-items: center;
+  /* Center flex items vertically */
+  justify-content: center;
+  /* Center flex items and horizontally */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
-  display: block;
-  flex-basis: 80%;
-  max-width: 700px;
+  margin: 1rem;
+  width: 700px;
+  max-width: 80%;
+  align-self: flex-end;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-  margin: auto;
+  margin: 1rem;
   display: block;
-  width: 80%;
-  max-width: 700px;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
   flex-basis: 80%;
+  align-self: flex-start;
 }
 
 /* Add Animation - Zoom in the Modal */
