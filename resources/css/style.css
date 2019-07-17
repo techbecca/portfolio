@@ -6,17 +6,17 @@ html {
 body {
   color: #153143;
   background-color: #F8F2F4;
+  text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   Font-Family: 'Work Sans', Sans-Serif;
-  Font-Size: 3rem;
-  text-align: center;
   padding: 2rem;
 }
 
-h2, h3, h4, h5, h6 {
-  Font-Family: 'Work Sans', Sans-Serif;
+h1 {
+  font-Size: 3.75rem;
+  line-height: 2;
 }
 
 h2 {
@@ -41,33 +41,28 @@ header {
   background-color: #9B7282;
   opacity: 0.96;
   transition: transform .5s ease-in-out;
+  color: #fbf9f9;
   box-shadow: 0 0 6px rgba(0, 0, 0, .1);
 }
 
 nav {
   padding: 1.33rem;
   text-align: right;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
 }
 
 nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
 nav li {
-  color: #fbf9f9;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1rem;
   display: inline-block;
   padding: 0.5rem 1rem;
-  text-align: center;
 }
 
 /* Banner Section */
-#banner {
+.banner {
   background-image: url('..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
   background-position: center;
   background-size: cover;
@@ -77,10 +72,6 @@ nav li {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-#banner h1 {
-  font-size: 3.75rem;
   color: #F8F2F4;
 }
 
