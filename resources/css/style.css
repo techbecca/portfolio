@@ -79,7 +79,7 @@ Gallery: Flexbox
 */
 .gallery {
   background: #ECC9C9;
-  padding: 6rem;
+  padding: 4rem 6rem;
   text-align: center;
 }
 
@@ -116,7 +116,7 @@ Gallery: Flexbox
 
 @media only screen and (max-width: 768px) {
   .gallery {
-    padding: 0rem;
+    padding: 4rem 0rem;
   }
 
   nav {
