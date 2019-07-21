@@ -1,11 +1,19 @@
 html {
   Font-Family: 'Open Sans', Sans-Serif;
   Font-Size: 15px;
+  /* Palette colors */
+  --main-color: #9B7282;
+  --secondary-color: #ECC9C9;
+  --accent-color: #57383d;
+  /* Whites */
+  --main-bg-color: #F8F2F4;
+  /* Greys */
+  --main-txt-color: #153143;
 }
 
 body {
-  color: #153143;
-  background-color: #F8F2F4;
+  color: var(--main-txt-color, lightslategrey);
+  background-color: var(--main-bg-color, antiquewhite);
   text-align: center;
 }
 
@@ -37,7 +45,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: #9B7282;
+  background-color: var(--main-color, palevioletred);
   opacity: 0.96;
   transition: transform .5s ease-in-out;
   color: #fbf9f9;
@@ -71,14 +79,14 @@ nav li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #F8F2F4;
+  color: var(--main-bg-color, antiquewhite);
 }
 
 /*
 Gallery: Flexbox
 */
 .gallery {
-  background: #ECC9C9;
+  background: var(--secondary-color, mistyrose);
   padding: 4rem 6rem;
   text-align: center;
 }
@@ -101,7 +109,7 @@ Gallery: Flexbox
 }
 
 .album {
-  background: #F8F2F4;
+  background: var(--main-bg-color, antiquewhite);
   border-radius: 5px;
   padding: 2rem;
   margin: 4rem 3rem;
