@@ -95,8 +95,7 @@ Gallery: Flexbox
 }
 
 .gallery img {
-  max-width: 10rem;
-  height: auto;
+  max-height: 13rem;
   margin: 1rem;
 }
 
