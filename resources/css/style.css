@@ -41,7 +41,7 @@ a {
   color: inherit;
 }
 
-/* header */
+/* Header & Footer */
 header, footer {
   position: sticky;
   width: 100%;
@@ -94,9 +94,7 @@ nav li {
   color: var(--main-bg-color, antiquewhite);
 }
 
-/*
-Gallery: Flexbox
-*/
+/* Gallery: Flexbox */
 .gallery {
   background: var(--secondary-color, mistyrose);
   padding: 4rem 6rem;
@@ -127,6 +125,7 @@ Gallery: Flexbox
   margin: 4rem 3rem;
 }
 
+/* Flexbox */
 .container {
   display: flex;
   flex-wrap: wrap;
