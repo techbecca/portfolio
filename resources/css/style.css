@@ -116,6 +116,13 @@ nav li {
   max-height: 13rem;
   margin: 1rem;
   box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  opacity: 0.7;
 }
 
 .album {
