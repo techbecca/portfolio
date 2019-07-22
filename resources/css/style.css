@@ -42,8 +42,8 @@ a {
 }
 
 /* header */
-header {
-  position: fixed;
+header, footer {
+  position: sticky;
   width: 100%;
   z-index: 10;
   background-color: var(--main-color, palevioletred);
@@ -53,7 +53,18 @@ header {
   box-shadow: 0 0 6px rgba(0, 0, 0, .1);
 }
 
-nav {
+header {
+  top: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.33rem;
+}
+
+nav, footer {
   padding: 1.33rem;
   text-align: right;
   font-family: 'Work Sans', sans-serif;
