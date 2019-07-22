@@ -94,7 +94,7 @@ nav li {
   color: var(--main-bg-color, antiquewhite);
 }
 
-/* Gallery: Flexbox */
+/* Gallery */
 .gallery {
   background: var(--secondary-color, mistyrose);
   padding: 4rem 6rem;
