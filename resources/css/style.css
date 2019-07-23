@@ -19,16 +19,34 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   Font-Family: 'Work Sans', Sans-Serif;
-  padding: 2rem;
+  line-height: 2;
 }
 
 h1 {
   font-Size: 3.75rem;
-  line-height: 2;
+  padding: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.33rem;
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 1.33rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 p {
@@ -39,6 +57,11 @@ p {
 
 a {
   color: inherit;
+}
+
+.icon {
+  max-width: 60px;
+  box-shadow: 0 0 0;
 }
 
 /* Header & Footer */
@@ -138,6 +161,10 @@ nav li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+
+#portfolio .container {
+  padding: 2rem 0;
 }
 
 @media only screen and (max-width: 768px) {
