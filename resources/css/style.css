@@ -61,9 +61,9 @@ a {
 }
 
 .gallery .icon {
-    max-width: 40px;
-    box-shadow: 0 0 0;
-    margin: 0.5rem;
+  max-width: 40px;
+  box-shadow: 0 0 0;
+  margin: 0.5rem;
 }
 
 /* Header & Footer */
@@ -82,16 +82,12 @@ header {
   top: 0;
 }
 
-footer {
+header, footer {
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1.33rem;
-}
-
-nav, footer {
-  padding: 1.33rem;
-  text-align: right;
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
 }
