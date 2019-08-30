@@ -114,7 +114,7 @@ nav li {
   background-image: url('..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
   background-position: center;
   background-size: cover;
-  height: 46rem;
+  height: 100vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
