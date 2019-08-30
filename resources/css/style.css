@@ -169,12 +169,19 @@ nav li {
   align-items: center;
 }
 
-#portfolio .container {
-  padding: 2rem 0;
-}
-
 .item {
   margin: 1rem;
+}
+
+/* portfolio */
+img.portfolio {
+  object-fit: cover;
+  width: 20rem;
+  height: 15rem;
+}
+
+#portfolio .container {
+  padding: 2rem 0;
 }
 
 @media only screen and (max-width: 768px) {
