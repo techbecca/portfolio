@@ -11,10 +11,10 @@
     if ($fileinfo->isDir()) {
       // Collect name of album
       $name = $fileinfo->getFilename();
-      // Collect the images
       $images = array();
       // TODO: use glob() to only get valid img formats
       $imgIt = new FilesystemIterator($filepath, FilesystemIterator::KEY_AS_PATHNAME);
+      // Collect the images
       foreach ($imgIt as $imgFileinfo) {
         //TODO: test that we actually have an image before displaying
         array_push($images, $imgIt->key());
@@ -32,6 +32,7 @@
     echo json_encode($albums);
   } else {
     // Set response code - 404 Not found
+    // FIXME: should probably not give a 200 code but not a 404 either
     http_response_code(200);
     // Set error message
     echo json_encode(array());

@@ -1,5 +1,6 @@
 var production = true;
 var environment = production ? "." : "http://www.techbecca.me";
+
 $(document).ready(function() {
 
   $.getJSON(environment + "/api/albums.php", function(albums, status) {
