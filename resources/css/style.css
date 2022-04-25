@@ -1,34 +1,41 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
-  Font-Family: 'Open Sans', Sans-Serif;
-  Font-Size: 15px;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 15px;
   /* Palette colors */
-  --main-color: #9B7282;
+  --main-color: #9b7282;
   --secondary-color: #edcdcd;
   --accent-color: #57383d;
   /* Whites */
-  --main-bg-color: #F8F2F4;
+  --main-bg-color: #f8f2f4;
   /* Greys */
   --main-txt-color: #153143;
 }
 
 body {
-  color: var(--main-txt-color, lightslategrey);
-  background-color: var(--main-bg-color, antiquewhite);
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
   text-align: center;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  Font-Family: 'Work Sans', Sans-Serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", Sans-Serif;
   line-height: 2;
 }
 
 h1 {
-  font-Size: 3.75rem;
+  font-size: 3.75rem;
   padding: 2rem;
 }
 
@@ -55,8 +62,8 @@ h6 {
 }
 
 p {
-  Font-Family: 'Open Sans', Sans-Serif;
-  Font-Size: 1rem;
+  font-family: "Open Sans", Sans-Serif;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -71,15 +78,16 @@ a {
 }
 
 /* Header & Footer */
-header, footer {
+header,
+footer {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: var(--main-color, palevioletred);
+  background-color: var(--main-color);
   opacity: 0.96;
-  transition: transform .5s ease-in-out;
-  color: #fbf9f9;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+  transition: transform 0.5s ease-in-out;
+  color: var(--main-bg-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -93,10 +101,11 @@ footer {
   padding: 1.33rem;
 }
 
-nav, footer {
+nav,
+footer {
   padding: 1.33rem;
   text-align: right;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
 }
 
@@ -111,7 +120,7 @@ nav li {
 
 /* Banner Section */
 .banner {
-  background-image: url('..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg');
+  background-image: url("..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -120,12 +129,12 @@ nav li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--main-bg-color, antiquewhite);
+  color: var(--main-bg-color);
 }
 
 /* Gallery */
 .gallery {
-  background: var(--secondary-color, mistyrose);
+  background: var(--secondary-color);
   padding: 4rem 6rem;
   text-align: center;
 }
@@ -144,7 +153,7 @@ nav li {
 .gallery img {
   max-height: 13rem;
   margin: 1rem;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -155,7 +164,7 @@ nav li {
 }
 
 .album {
-  background: var(--main-bg-color, antiquewhite);
+  background: var(--main-bg-color);
   border-radius: 5px;
   padding: 2rem;
   margin: 4rem 3rem;
