@@ -4,22 +4,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --mountbatten-pink: #9b7282ff;
+  --independence: #3d485cff;
+  --snow: #f8f2f5ff;
+  --black-shadows: #c8b2baff;
+  --rust: #ae5428ff;
+}
+
 html {
   font-family: "Open Sans", Sans-Serif;
   font-size: 15px;
   /* Palette colors */
-  --main-color: #9b7282;
-  --secondary-color: #edcdcd;
-  --accent-color: #57383d;
+  --primary-color: var(--mountbatten-pink);
+  --secondary-color: var(--rust);
+  --primary-light-color: var(--black-shadows);
   /* Whites */
-  --main-bg-color: #f8f2f4;
+  --bg-color: var(--snow);
   /* Greys */
-  --main-txt-color: #153143;
+  --text-color: var(--independence);
 }
 
 body {
-  color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   text-align: center;
   overflow-x: hidden;
 }
@@ -83,10 +91,10 @@ footer {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
   opacity: 0.96;
   transition: transform 0.5s ease-in-out;
-  color: var(--main-bg-color);
+  color: var(--bg-color);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,12 +137,11 @@ nav li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--main-bg-color);
+  color: var(--bg-color);
 }
 
 /* Gallery */
 .gallery {
-  background: var(--secondary-color);
   padding: 4rem 6rem;
   text-align: center;
 }
@@ -164,7 +171,7 @@ nav li {
 }
 
 .album {
-  background: var(--main-bg-color);
+  background: var(--bg-color);
   border-radius: 5px;
   padding: 2rem;
   margin: 4rem 3rem;
