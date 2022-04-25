@@ -5,11 +5,11 @@
 }
 
 :root {
-  --mountbatten-pink: #9b7282ff;
-  --independence: #3d485cff;
-  --snow: #f8f2f5ff;
-  --black-shadows: #c8b2baff;
-  --rust: #ae5428ff;
+  --mountbatten-pink: rgba(155, 114, 130, 1);
+  --independence: rgba(61, 72, 92, 1);
+  --snow: rgba(248, 242, 245, 1);
+  --black-shadows: rgba(200, 178, 186, 1);
+  --rust: rgba(174, 85, 40, 1);
 }
 
 html {
@@ -40,16 +40,19 @@ h5,
 h6 {
   font-family: "Work Sans", Sans-Serif;
   line-height: 2;
+  font-weight: 300;
 }
 
 h1 {
   font-size: 3.75rem;
   padding: 2rem;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.33rem;
   padding: 1rem;
+  font-weight: 500;
 }
 
 h3 {
@@ -114,7 +117,8 @@ footer {
   padding: 1.33rem;
   text-align: right;
   font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.33rem;
+  font-weight: 500;
 }
 
 nav a {
@@ -128,10 +132,17 @@ nav li {
 
 /* Banner Section */
 .banner {
-  background-image: url("..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg");
-  background-position: center;
+  background: var(--black-shadows);
+  background: -webkit-linear-gradient(
+      rgba(61, 72, 92, 0.8),
+      rgba(155, 114, 130, 0.8)
+    ),
+    url("..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg");
+  background: linear-gradient(rgba(61, 72, 92, 0.8), rgba(155, 114, 130, 0.8)),
+    url("..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg");
+  background-position: top;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
