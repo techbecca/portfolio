@@ -1,47 +1,67 @@
-var production = true;
+var production = false;
 var environment = production ? "." : "http://www.techbecca.me";
 
-$(document).ready(function() {
-
-  $.getJSON(environment + "/api/albums.php", function(albums, status) {
+document.addEventListener("DOMContentLoaded", function () {
+  // Get files from endpoint and process them
+  $.getJSON(environment + "/api/albums.php", function (albums, status) {
     // Loop through albums, for each album:
-    for (var albumName in albums) {
-      var section = $('<section>').attr('class', 'album').attr('id', albumName);
-      // Create element for html heading & Append heading to albums div
-      $('<h2>' + albumName + '</h2>').appendTo(section);
+    for (const albumName in albums) {
+      const section = document.createElement("section");
+      section.setAttribute("class", "album");
+      section.setAttribute("id", albumName);
+
+      // Create element for album heading & Append heading to album section
+      const heading = document.createElement("h2");
+      heading.innerHTML = albumName;
+      section.appendChild(heading);
+
       // Add container element with album name as id
-      var container = $('<div>');
-      container.attr('class', 'container');
+      const container = document.createElement("div");
+      container.setAttribute("class", "container");
+
       // For each image:
       let i = 0;
-      for (imgSrc of albums[albumName]) {
-        // Create id
-        let imgId = albumName + "-" + i++;
+      for (let imgSrc of albums[albumName]) {
+        // Create id & source path
+        const imgId = albumName + "-" + i++;
         imgSrc = environment + imgSrc.substring(2);
+
         // Create image element & Add source attribute
-        var img = $('<img />', {
-          src: imgSrc,
-          id: imgId,
-          alt: imgId
-        });
-        img.click(function() {
-          $("#myModal").css('display', 'flex');
-          $("#img01").attr('src', $(this).attr('src'));
-          $("#caption").text($(this).attr('alt'));
-        });
+        const img = document.createElement("img");
+        img.setAttribute("src", imgSrc);
+        img.setAttribute("id", imgId);
+        img.setAttribute("alt", imgId);
+
+        // Add on-click event that displays a modal of the image
+        img.addEventListener("click", displayImageAsModal);
+
         // Append image to container div
-        container.append(img);
+        container.appendChild(img);
       }
       // Append container to album
-      container.appendTo(section);
-      section.appendTo("#albums")
+      section.appendChild(container);
+
+      // Append album to albums div
+      document.getElementById("albums").appendChild(section);
     }
-
-
   });
 
-  $(".close").click(function() {
-    $("#myModal").hide();
-  })
-
+  // Add close on-click event on x icon
+  const close = document.getElementById("close");
+  close.addEventListener("click", () => {
+    document.getElementById("myModal").style.display = "none";
+  });
 });
+
+function displayImageAsModal(event) {
+  try {
+    document.getElementById("myModal").style.display = "flex";
+    document
+      .getElementById("img01")
+      .setAttribute("src", event.target.getAttribute("src"));
+    document.getElementById("caption").innerText =
+      event.target.getAttribute("alt");
+  } catch (error) {
+    console.log("Modal function didn't work", error);
+  }
+}
