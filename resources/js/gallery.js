@@ -5,15 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get files from endpoint and process them
   $.getJSON(environment + "/api/albums.php", function (albums, status) {
     // Loop through albums, for each album:
+    const albumsSection = document.getElementById("albums");
     for (const albumName in albums) {
-      const section = document.createElement("section");
-      section.setAttribute("class", "album");
-      section.setAttribute("id", albumName);
-
       // Create element for album heading & Append heading to album section
       const heading = document.createElement("h2");
       heading.innerHTML = albumName;
-      section.appendChild(heading);
+      albumsSection.appendChild(heading);
 
       // Add container element with album name as id
       const container = document.createElement("div");
@@ -39,10 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
         container.appendChild(img);
       }
       // Append container to album
-      section.appendChild(container);
+      albumsSection.appendChild(container);
 
       // Append album to albums div
-      document.getElementById("albums").appendChild(section);
     }
   });
 

@@ -181,13 +181,6 @@ nav li {
   opacity: 0.7;
 }
 
-.album {
-  background: var(--bg-color);
-  border-radius: 5px;
-  padding: 2rem;
-  margin: 4rem 3rem;
-}
-
 /* Flexbox */
 .container {
   display: flex;
