@@ -114,7 +114,7 @@ footer {
 
 nav,
 footer {
-  padding: 1.33rem;
+  padding: 1.33rem 0;
   text-align: right;
   font-family: "Work Sans", sans-serif;
   font-size: 1.33rem;
@@ -142,7 +142,7 @@ nav li {
     url("..\\..\\resources\\img\\roberto-nickson-5wFcCUT9THY-unsplash.jpg");
   background-position: top;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -187,6 +187,7 @@ nav li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  padding: 2rem;
 }
 
 .item {
@@ -200,16 +201,37 @@ img.portfolio {
   height: 15rem;
 }
 
-#portfolio .container {
-  padding: 2rem 0;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .gallery {
     padding: 4rem 0rem;
   }
 
   nav {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 2.33rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.67rem;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 1.33rem;
+  }
+
+  img.portfolio {
+    width: 16rem;
+    height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    font-size: 1rem;
   }
 }
